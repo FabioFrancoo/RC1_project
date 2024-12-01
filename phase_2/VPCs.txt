@@ -1,0 +1,113 @@
+set pcname January
+ip 172.26.12.2 172.26.12.1 24
+ip 2002:a198:bc26:102:2050:79ff:fe66:6806/64
+ip auto
+
+set pcname February
+dhcp
+ip auto
+
+set pcname March
+ip 203.128.191.164 203.128.191.161 28
+ip 2002:a198:bc26:102:2050:79ff:fe66:6807/64
+ip auto
+
+set pcname April
+ip 172.26.13.130 172.26.13.129 25
+ip 2002:a198:bc26:104:2050:79ff:fe66:680b/64
+ip auto
+
+set pcname May
+dhcp
+ip auto
+
+set pcname June
+ip 203.128.191.132 203.128.191.129 27
+ip 2002:a198:bc26:104:2050:79ff:fe66:6809/64
+ip auto
+
+set pcname July
+ip 172.26.13.2 172.26.13.1 26
+ip 2002:a198:bc26:6:2050:79ff:fe66:6805/64
+ip auto
+
+set pcname August
+dhcp
+ip auto
+
+set pcname September
+ip 203.128.191.196 203.128.191.193 26
+ip 2002:a198:bc26:6:2050:79ff:fe66:6803/64
+ip auto
+
+set pcname October
+ip 172.26.13.98 172.26.13.97 27
+ip 2002:a198:bc26:8:2050:79ff:fe66:6802/64
+ip auto
+
+set pcname November
+dhcp
+ip auto
+
+set pcname December
+ip 203.128.191.180 203.128.191.177 29
+ip 2002:a198:bc26:8:2050:79ff:fe66:6800/64
+ip auto
+
+set pcname Aires
+dhcp
+ip auto
+
+set pcname Taurus
+ip 203.12.59.3 203.12.59.1 27
+ip 2002:a125:bc91:e:2050:79ff:fe66:680d/64
+ip auto
+
+set pcname Gemini
+ip 172.22.13.194 172.22.13.193 26
+ip 2002:a125:bc91:10:2050:79ff:fe66:680e/64
+ip auto
+
+set pcname Cancer
+dhcp
+ip auto
+
+set pcname Leo
+ip 203.12.59.100 203.12.59.97 27
+ip 2002:a125:bc91:10:2050:79ff:fe66:6810/64
+ip auto
+
+set pcname Virgo
+ip 172.22.13.2 172.22.13.1 26
+ip 2002:a125:bc91:112:2050:79ff:fe66:6811/64
+ip auto
+
+set pcname Libra
+dhcp
+ip auto
+
+set pcname Scorpius
+ip 172.22.13.98 172.22.13.97 28
+ip 2002:a125:bc91:114:2050:79ff:fe66:6813/64
+ip auto
+
+set pcname Sagittarius
+dhcp
+ip auto
+
+set pcname Capricornus
+ip 203.12.59.50 203.12.59.49 29
+ip 2002:a125:bc91:116:2050:79ff:fe66:6815/64
+ip auto
+
+set pcname Aquarius
+ip 203.12.59.84 203.12.59.81 28
+ip 2002:a125:bc91:114:2050:79ff:fe66:6816/64
+ip auto
+
+set pcname Pisces
+ip 203.12.59.36 203.12.59.33 28
+ip 2002:a125:bc91:112:2050:79ff:fe66:6817/64
+ip auto
+
+

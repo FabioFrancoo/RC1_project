@@ -1,0 +1,4 @@
+set pcname Scorpius
+ip 172.22.13.98 172.22.13.97 28
+ip 2002:a125:bc91:114:2050:79ff:fe66:6813/64
+ip auto

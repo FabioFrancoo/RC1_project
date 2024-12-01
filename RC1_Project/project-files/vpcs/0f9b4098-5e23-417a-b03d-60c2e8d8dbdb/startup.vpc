@@ -1,0 +1,3 @@
+set pcname Libra
+dhcp
+ip auto

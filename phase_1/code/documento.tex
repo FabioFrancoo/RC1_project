@@ -22,7 +22,7 @@
 
 \pagestyle{fancy}  % Ativa o estilo fancyhdr
 
-\lhead{\includegraphics[width=0.5cm]{RC_project/images/ua.pdf} UA}   % Cabeçalho à esquerda
+\lhead{\includegraphics[width=0.5cm]{code/images/ua.pdf} UA}   % Cabeçalho à esquerda
 \chead{Redes de Comunicações I}    % Cabeçalho no centro
 \rhead{Grupo 4}    % Cabeçalho à direita
 
@@ -49,7 +49,7 @@
     \vspace{0.5cm}
     {\LARGE Universidade de Aveiro}\\
     \vspace{1.5cm}
-    \includegraphics[width=1.5cm]{RC_project/images/ua.pdf} % Adicione o logo da universidade se necessário
+    \includegraphics[width=1.5cm]{code/images/ua.pdf} % Adicione o logo da universidade se necessário
     \vspace{1.5cm}
     
     {\Large \textbf{Departamento de Eletrónica, Telecomunicações e Informática}}\\
@@ -114,7 +114,7 @@ Endereços IP utilizados ao longo do projeto:
      & \textbf{Calendar Inc} & \textbf{Horoscope Inc} \\ \hline
     \textbf{Public IPv4(sub) Network} & 203.128.191.128/25 & 203.12.59.0/25 \\ \hline
     \textbf{Private IPv4 Network} & 172.26.12.0/23 & 172.22.12.0/23 \\ \hline
-    \textbf{Global IPv4 Network} & 2002:A198:BC26::/48 & 2002:A125:BC91::/48 \\ \hline
+    \textbf{Global IPv6 Network} & 2002:A198:BC26::/48 & 2002:A125:BC91::/48 \\ \hline
 \end{tabular}
 \caption{Endereços IP utilizados}
 \label{tab:exemplo}
@@ -160,7 +160,7 @@ Por último, como só é possível fazer distribuições até à máscara 30 poi
 \begin{figure}[H]
     \hspace*{-4.0cm}
     \centering
-    \includegraphics[width=20cm]{RC_project/images/CalendarInc-IPv4 Publico.png}
+    \includegraphics[width=20cm]{code/images/CalendarInc-IPv4 Publico.png}
    % \caption{Legenda da imagem, se desejar} % Opcional
 \end{figure}
 
@@ -168,7 +168,7 @@ Por último, como só é possível fazer distribuições até à máscara 30 poi
 \section*{Horoscope Inc}
 
 \begin{table}[h!]
-\hspace*{-2.0cm}
+\hspace*{-3.0cm}
 \centering
 %\begin{tabular}{|m{2cm}|m{1,3cm}|m{2,3cm}|m{5cm}|m{2,5cm}|m{1cm}|}
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -201,7 +201,7 @@ Por último, voltamos a pegar na rede disponível para divisões, neste caso 203
 \begin{figure}[H]
     \hspace*{-3.9cm}
     \centering
-    \includegraphics[width=20cm]{RC_project/images/Horoscope Inc - IPv4 Publico.png}
+    \includegraphics[width=20cm]{code/images/Horoscope Inc - IPv4 Publico.png}
    % \caption{Legenda da imagem, se desejar} % Opcional
 \end{figure}
 
@@ -211,7 +211,7 @@ Por último, voltamos a pegar na rede disponível para divisões, neste caso 203
 \section*{Calendar Inc}
 
 \begin{table}[h!]
-\hspace*{-2.2cm}
+\hspace*{-3.0cm}
 \centering
 %\begin{tabular}{|m{2cm}|m{1,3cm}|m{2,3cm}|m{5cm}|m{2,5cm}|m{1cm}|}
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -222,6 +222,7 @@ Por último, voltamos a pegar na rede disponível para divisões, neste caso 203
     VLAN6 & 26 & 172.26.13.0 & 172.26.13.2 a 172.26.13.62 & 172.26.13.63 & 172.26.13.1\\ \hline
     VLAN8 & 27 & 172.26.13.96 & 172.26.13.98 a 172.26.13.126 & 172.26.13.127 & 172.26.13.97\\ \hline
     VLAN12 & --- & --- & --- & --- & --- \\ \hline
+    Interconnections & 30 & 172.26.13.64 & 172.26.13.65 a 172.26.13.66 & 172.26.13.67 & --- \\ \hline
 \end{tabular}
 \caption{Atribuição do IPv4 Privado para Calendar Inc}
 \label{tab:exemplo5x6}
@@ -241,7 +242,7 @@ Seguidamente, voltamos a pegar na rede disponível para divisões, neste caso 17
 \begin{figure}[H]
    \hspace*{-4.0cm}
     \centering
-    \includegraphics[width=20cm]{RC_project/images/ipv4_priv_calendar.png}
+    \includegraphics[width=20cm]{code/images/IPv4 Privado - Calendar Inc.png}
    % \caption{Legenda da imagem, se desejar} % Opcional
 \end{figure}
 
@@ -251,7 +252,7 @@ Seguidamente, voltamos a pegar na rede disponível para divisões, neste caso 17
 \section*{Horoscope Inc}
 
 \begin{table}[h!]
-\hspace*{-2.0cm}
+\hspace*{-3.0cm}
 \centering
 %\begin{tabular}{|m{2cm}|m{1,3cm}|m{2,3cm}|m{5cm}|m{2,5cm}|m{1cm}|}
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -263,6 +264,7 @@ Seguidamente, voltamos a pegar na rede disponível para divisões, neste caso 17
     VLAN20 & 28 & 172.22.13.96 & 172.22.13.98 a 172.22.13.110 & 172.22.13.111 & 172.22.13.97 \\ \hline
     VLAN22 & 24 & 172.22.12.0 & 172.22.12.2 a 172.22.12.254 & 172.22.12.255 & 172.22.12.1 \\ \hline
     VLAN24 & --- & --- & --- & --- & --- \\ \hline
+    Interconnections & 30 & 172.22.13.112 & 172.22.13.113 a 172.22.13.114 & 172.22.13.115 & --- \\ \hline
 \end{tabular}
 \caption{Atribuição do IPv4 Privado para Horoscope Inc}
 \label{tab:exemplo5x6}
@@ -280,7 +282,7 @@ Seguidamente, voltamos a pegar na rede disponível para divisões, neste caso 17
 \begin{figure}[H]
     \hspace*{-4.0cm}
     \centering
-    \includegraphics[width=20cm]{RC_project/images/Horoscope Inc - IPv4 Privado.png}
+    \includegraphics[width=20cm]{code/images/Horoscope Inc - IPv4 Privado.png}
    % \caption{Legenda da imagem, se desejar} % Opcional
 \end{figure}
 
@@ -303,9 +305,9 @@ Seguidamente, voltamos a pegar na rede disponível para divisões, neste caso 17
         \multirow{2}{*}{R2} & \multirow{2}{*}{\textbf{P}::/56} & 6 & \textbf{P}:6::/64 & \textbf{P}:6::2/64 a \textbf{P}:6:FFFF:FFFF:FFFF:FFFF/64 & \textbf{P}:6::1/64 \\ \cline{3-6}   
          & & 8 & \textbf{P}:8::/64 & \textbf{P}:8::2/64 a \textbf{P}:8:FFFF:FFFF:FFFF:FFFF/64 & \textbf{P}:8::1/64 \\ \cline{3-6} \hline
 
-         R2 (f1/1) & \textbf{P}::/126 & --- & --- & --- & --- \\ \hline
+         R2 (f1/1) & \textbf{P}::1/126 & --- & --- & --- & --- \\ \hline
 
-         ESW2 (f0/0) & \textbf{P}::1/126 & --- & --- & --- & --- \\ \hline
+         ESW2 (f0/0) & \textbf{P}::2/126 & --- & --- & --- & --- \\ \hline
          
         \multirow{3}{*}{ESW2} & \multirow{3}{*}{\textbf{P}:100::/56} & 2 & \textbf{P}:102::/64 & \textbf{P}:102::2/64 a \textbf{P}:102:FFFF:FFFF:FFFF:FFFF/64 & \textbf{P}:102::1/64 \\ \cline{3-6} 
          & & 4 & \textbf{P}:104::/64 & \textbf{P}:104::2/64 a \textbf{P}:104:FFFF:FFFF:FFFF:FFFF/64 & \textbf{P}:104::1/64 \\ \cline{3-6}   
@@ -327,8 +329,8 @@ Posteriormente pegou-se na rede 2002:A198:BC26::/56 e dividimo-la em 2, atribuid
 
 De seguida, e obtida a partir da rede 2002:A198:BC26::/48, obtivemos as seguintes sub-redes para a comunicação entre o Router 2 e o ESW 2:
 \begin{itemize}
-    \item 2002:A198:BC26::/126;
-    \item 2002:A198:BC26::1/126.
+    \item 2002:A198:BC26::1/126;
+    \item 2002:A198:BC26::2/126.
 \end{itemize}
 
 Por fim pegamos na rede 2002:A198:BC26:100::/56 e subdividimo-la em 3, atribuindo 2002:A198:BC26:102::/64 à VLAN 2, 2002:A198:BC26:104::/64 à VLAN 4 e 2002:A198:BC26:10C::/64 à VLAN 12.
@@ -337,7 +339,7 @@ Por fim pegamos na rede 2002:A198:BC26:100::/56 e subdividimo-la em 3, atribuind
 \begin{figure}[H]
     \hspace*{-4.0cm}
     \centering
-    \includegraphics[width=20cm]{RC_project/images/ipv6_global_calendar.png}
+    \includegraphics[width=20cm]{code/images/ipv6_global_calendar.png}
    % \caption{Legenda da imagem, se desejar} % Opcional
 \end{figure}
 
@@ -361,9 +363,9 @@ Por fim pegamos na rede 2002:A198:BC26:100::/56 e subdividimo-la em 3, atribuind
          & & 16 & \textbf{P}:10::/64 & \textbf{P}:10::2/64 a \textbf{P}:10:FFFF:FFFF:FFFF:FFFF/64 & \textbf{P}:10::1/64 \\ \cline{3-6}   
          & & 24 & \textbf{P}:18::/64 & \textbf{P}:18::2/64 a \textbf{P}:18:FFFF:FFFF:FFFF:FFFF/64 & \textbf{P}:18::1/64 \\ \hline
 
-         R1 (f1/0) & \textbf{P}::/126 & --- & --- & --- & --- \\ \hline
+         R1 (f1/0) & \textbf{P}::1/126 & --- & --- & --- & --- \\ \hline
 
-         ESW1 (f0/0) & \textbf{P}::1/126 & --- & --- & --- & --- \\ \hline
+         ESW1 (f0/0) & \textbf{P}::2/126 & --- & --- & --- & --- \\ \hline
          
          \multirow{3}{*}{ESW1} & \multirow{3}{*}{\textbf{P}:100::/56} & 18 & \textbf{P}:112::/64 & \textbf{P}:112::2/64 a \textbf{P}:112:FFFF:FFFF:FFFF:FFFF/64 & \textbf{P}:112::1/64 \\ \cline{3-6}   
          & & 20 & \textbf{P}:114::/64 & \textbf{P}:114::2/64 a \textbf{P}:114:FFFF:FFFF:FFFF:FFFF/64 & \textbf{P}:114::1/64 \\ \cline{3-6}   
@@ -384,8 +386,8 @@ Posteriormente pegou-se na rede 2002:A125:BC91::/56 e dividimo-la em 3, atribuid
 
 De seguida, e obtida a partir da rede 2002:A125:BC91::/48, obtivemos as seguintes sub-redes para a comunicação entre o Router 1 e o ESW 1:
 \begin{itemize}
-    \item 2002:A125:BC91::/126;
-    \item 2002:A125:BC91::1/126.
+    \item 2002:A125:BC91::1/126;
+    \item 2002:A125:BC91::2/126.
 \end{itemize}
 
 Por fim pegamos na rede 2002:A125:BC91:100::/56 e subdividimo-la em 3, atribuindo 2002:A125:BC91:112::/64 à VLAN 18, 2002:A125:BC91:114::/64 à VLAN 20 e 2002:A125:BC91:116::/64 à VLAN 22.
@@ -394,7 +396,7 @@ Por fim pegamos na rede 2002:A125:BC91:100::/56 e subdividimo-la em 3, atribuind
 \begin{figure}[H]
     \hspace*{-4.0cm}
     \centering
-    \includegraphics[width=20cm]{RC_project/images/Horoscope Inc - IPv6.png}
+    \includegraphics[width=20cm]{code/images/Horoscope Inc - IPv6.png}
    % \caption{Legenda da imagem, se desejar} % Opcional
 \end{figure}
 
@@ -403,36 +405,39 @@ Por fim pegamos na rede 2002:A125:BC91:100::/56 e subdividimo-la em 3, atribuind
 
 \section*{\centerline {Atribuição de endereços IP}}
 \begin{center}
-\hspace*{-1.2cm}
-\begin{tabular}{|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|}
     \hline
-    \textbf{Terminal} & \textbf{VLAN id} & \textbf{Private IPv4} & \textbf{Public IPv4} & \textbf{Global IPv6} \\ \hline
-    January  & 2 & 172.26.12.2 & --- & 2002:A198:BC26:102::2\\ \hline
-    February & 2 & DHCP & --- & 2002:A198:BC26:102::3 \\ \hline
-    March  & 2 & --- & 203.128.191.164 & 2002:A198:BC26:102::4 \\ \hline
-    April  & 4 & 172.26.13.130 & --- & 2002:A198:BC26:104::2 \\ \hline
-    May & 4 & DHCP & --- & 2002:A198:BC26:104::3 \\ \hline
-    June & 4 & --- & 203.128.191.132 & 2002:A198:BC26:104::4 \\ \hline
-    July & 6 & 172.26.13.2 & --- & 2002:A198:BC26:6::2 \\ \hline
-    August & 6 & DHCP & --- & 2002:A198:BC26:6::3 \\ \hline
-    September & 6 & --- & 203.128.191.196 & 2002:A198:BC26:6::4 \\ \hline
-    October & 8 & 172.26.13.98 & --- & 2002:A198:BC26:8::2 \\ \hline
-    November & 8 & DHCP & --- & 2002:A198:BC26:8::3 \\ \hline
-    December & 8 & --- & 203.128.191.180 & 2002:A198:BC26:8::4 \\ \hline
-    Calendar (VM) & 12 & --- & 203.128.191.190 & 2002:A198:BC26:10C::2 \\ \hline
-    Aires & 14 & DHCP & --- & 2002:A125:BC91:E::2\\ \hline
-    Taurus & 14 & --- & 203.12.59.3 & 2002:A125:BC91:E::3 \\ \hline
-    Gemini & 16 & 172.22.13.194 & --- & 2002:A125:BC91:10::2 \\ \hline
-    Cancer & 16 & DHCP & --- & 2002:A125:BC91:10::3 \\ \hline
-    Leo & 16 & --- & 203.12.59.100 & 2002:A125:BC91:10::4 \\ \hline
-    Virgo & 18 & 172.22.13.2 & --- & 2002:A125:BC91:112::2 \\ \hline
-    Libra & 18 & DHCP & --- & 2002:A125:BC91:112::3 \\ \hline
-    Scorpius & 20 & 172.22.13.98 & --- & 2002:A125:BC91:114::2 \\ \hline
-    Sagittarius & 20 & DHCP & --- & 2002:A125:BC91:114::3 \\ \hline
-    Capricornus & 22 & --- & 203.12.59.50 & 2002:A125:BC91:116::2 \\ \hline
-    Aquarius & 20 & --- & 203.12.59.84 & 2002:A125:BC91:114::4 \\ \hline
-    Pisces & 18 & --- & 203.12.59.36 & 2002:A125:BC91:112::4 \\ \hline
-    Horoscope (VM) & 24 & --- & 203.12.59.62 & 2002:A125:BC91:18::2 \\ \hline
+    \textbf{Terminal} & \textbf{VLAN id} & \textbf{Private IPv4} & \textbf{Public IPv4}\\ \hline
+    January  & 2 & 172.26.12.2/24 & --- \\ \hline
+    February & 2 & DHCP & ---  \\ \hline
+    March  & 2 & --- & 203.128.191.164/28 \\ \hline
+    April  & 4 & 172.26.13.130/25 & --- \\ \hline
+    May & 4 & DHCP & --- \\ \hline
+    June & 4 & --- & 203.128.191.132/27 \\ \hline
+    July & 6 & 172.26.13.2/26 & --- \\ \hline
+    August & 6 & DHCP & --- \\ \hline
+    September & 6 & --- & 203.128.191.196/26 \\ \hline
+    October & 8 & 172.26.13.98/27 & ---  \\ \hline
+    November & 8 & DHCP & --- \\ \hline
+    December & 8 & --- & 203.128.191.180/29 \\ \hline
+    Calendar (VM) & 12 & --- & 203.128.191.190/30 \\ \hline
+    ESW2 (f0/0) & --- & 172.26.13.65/30 & ---  \\ \hline
+    R2 (f1/1) & --- & 172.26.13.66/30 & --- \\ \hline
+    Aires & 14 & DHCP & --- \\ \hline
+    Taurus & 14 & --- & 203.12.59.3/27 \\ \hline
+    Gemini & 16 & 172.22.13.194/26 & --- \\ \hline
+    Cancer & 16 & DHCP & --- \\ \hline
+    Leo & 16 & --- & 203.12.59.100/27 \\ \hline
+    Virgo & 18 & 172.22.13.2/26 & --- \\ \hline
+    Libra & 18 & DHCP & --- \\ \hline
+    Scorpius & 20 & 172.22.13.98/28 & --- \\ \hline
+    Sagittarius & 20 & DHCP & --- \\ \hline
+    Capricornus & 22 & --- & 203.12.59.50/29  \\ \hline
+    Aquarius & 20 & --- & 203.12.59.84/28 \\ \hline
+    Pisces & 18 & --- & 203.12.59.36/28 \\ \hline
+    Horoscope (VM) & 24 & --- & 203.12.59.62/30 \\ \hline
+    R1 (f1/0) & --- & 172.22.13.113/30 & --- \\ \hline
+    ESW1 (f0/0) & --- & 172.22.13.114/30 & --- \\ \hline
 \end{tabular}
 \end{center}
 

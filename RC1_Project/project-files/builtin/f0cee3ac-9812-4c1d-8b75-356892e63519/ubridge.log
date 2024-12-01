@@ -1,0 +1,16 @@
+uBridge version 0.9.16 running with Npcap version 1.78, based on libpcap version 1.10.4
+Hypervisor TCP control server started (IP localhost port 50211).
+UDP tunnel connecting from local port 20098 to IPv4 addresss 127.0.0.1 on port 20099
+Ethernet interface \Device\NPF_{72845275-B6B9-451C-9DEF-352BAF14C5B4}
+Source NIO listener thread for f0cee3ac-9812-4c1d-8b75-356892e63519-1 has started
+Destination NIO listener thread for f0cee3ac-9812-4c1d-8b75-356892e63519-1 has started
+UDP tunnel connecting from local port 20101 to IPv4 addresss 127.0.0.1 on port 20100
+Ethernet interface \Device\NPF_{2697627C-C394-4854-8AD2-C4A61D6CD859}
+Source NIO listener thread for f0cee3ac-9812-4c1d-8b75-356892e63519-0 has started
+Destination NIO listener thread for f0cee3ac-9812-4c1d-8b75-356892e63519-0 has started
+pcap_sendpacket: send error: PacketSendPacket failed: A operação de transferência na interface de rede foi colocada em pausa.  (2150891562)
+send: No error
+Source NIO listener thread for f0cee3ac-9812-4c1d-8b75-356892e63519-1 has stopped
+pcap_next_ex: The interface disappeared (error code ERROR_DEVICE_REMOVED/STATUS_DEVICE_REMOVED)
+recv: No error
+Destination NIO listener thread for f0cee3ac-9812-4c1d-8b75-356892e63519-1 has stopped

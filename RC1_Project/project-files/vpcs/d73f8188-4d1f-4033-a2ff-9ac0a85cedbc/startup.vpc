@@ -1,0 +1,3 @@
+set pcname Cancer
+dhcp
+ip auto

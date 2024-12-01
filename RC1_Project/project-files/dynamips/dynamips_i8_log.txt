@@ -1,0 +1,15 @@
+Dec 01 14:24:58.984 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 01 14:24:58.987 HYPERVISOR: Started on IP = localhost, TCP port = 50179.
+Dec 01 14:24:59.470 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 01 14:24:59.471 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\franc\GNS3\projects\RC1_Project\project-files\dynamips 
+Dec 01 14:24:59.472 GENERAL: working_dir=C:\Users\franc\GNS3\projects\RC1_Project\project-files\dynamips
+Dec 01 14:24:59.472 HYPERVISOR: exec_cmd: ethsw create ClassRoomSwitch 
+Dec 01 14:25:15.802 HYPERVISOR: exec_cmd: nio create_udp udp-4d46407a-8822-4961-befe-c5cf319b61b1 20097 127.0.0.1 20096 
+Dec 01 14:25:15.804 HYPERVISOR: exec_cmd: ethsw add_nio ClassRoomSwitch udp-4d46407a-8822-4961-befe-c5cf319b61b1 
+Dec 01 14:25:15.822 HYPERVISOR: exec_cmd: ethsw set_access_port ClassRoomSwitch udp-4d46407a-8822-4961-befe-c5cf319b61b1 1 
+Dec 01 14:25:16.263 HYPERVISOR: exec_cmd: nio create_udp udp-52803c24-ed7b-443e-959a-8ac38e538046 20099 127.0.0.1 20098 
+Dec 01 14:25:16.263 HYPERVISOR: exec_cmd: ethsw add_nio ClassRoomSwitch udp-52803c24-ed7b-443e-959a-8ac38e538046 
+Dec 01 14:25:16.268 HYPERVISOR: exec_cmd: ethsw set_access_port ClassRoomSwitch udp-52803c24-ed7b-443e-959a-8ac38e538046 1 
+Dec 01 14:25:17.227 HYPERVISOR: exec_cmd: nio create_udp udp-4e632bb8-2739-45cb-8690-7c29cd6ade3e 20105 127.0.0.1 20104 
+Dec 01 14:25:17.228 HYPERVISOR: exec_cmd: ethsw add_nio ClassRoomSwitch udp-4e632bb8-2739-45cb-8690-7c29cd6ade3e 
+Dec 01 14:25:17.229 HYPERVISOR: exec_cmd: ethsw set_access_port ClassRoomSwitch udp-4e632bb8-2739-45cb-8690-7c29cd6ade3e 1 
