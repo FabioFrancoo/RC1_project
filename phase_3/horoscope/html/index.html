@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horoscope Inc</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e5294; /* Deep blue for a professional look */
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00437d;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #1e3d58; /* Darker blue for hover effect */
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1e3d58;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #34495e;
+            font-size: 1.8em;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .cta-button {
+            background-color: #1e3d58;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #34495e;
+        }
+
+        footer {
+            background-color: hsl(210, 29%, 29%);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px 15px;
+                margin: 0 10px;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Horoscope Inc</h1>
+        <p></p>
+    </header>
+
+    <nav>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Suporte</a>
+    </nav>
+
+    <div class="container">
+        <section id="services">
+            <h2>Nossos Serviços</h2>
+            <div class="card">
+                <h3>A Nossa Rede</h3>
+                <p>Aires</p>
+                <p>Taurus</p>
+                <p>Gemini</p>
+                <p>Cancer</p>
+                <p>Leo</p>
+                <p>Virgo</p>
+                <p>Libra</p>
+                <p>Scorpius</p>
+                <p>Sagittarius</p>
+                <p>Capricornus</p>
+                <p>Aquarius</p>
+                <p>Pisces</p>
+
+            </div>
+            <div class="card">
+                <h3>Networks</h3>
+                <p>Vlan14</p>
+                <p>Vlan16</p>
+                <p>Vlan18</p>
+                <p>Vlan20</p>
+                <p>Vlan22</p>
+                <p>Vlan24</p>
+            </div>
+            <div class="card">
+                <h3>O nosso IP</h3>
+                <p>203.12.59.62</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Suporte</h2>
+            <p>Se tiver alguma questão contacte o manager: ricardodomingues05@ua.pt</p>
+            <a class="cta-button">Contact Us</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Horoscope Inc . All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
