@@ -1,5 +1,11 @@
 !
 !
+!
+!
+!
+!
+!
+!
 
 !
 version 12.4
@@ -58,7 +64,6 @@ interface FastEthernet0/0
  duplex auto
  speed auto
  ipv6 address 2002:A125:BC91::2/126
- ipv6 enable
 !
 interface FastEthernet0/1
  description *** Unused for Layer2 EtherSwitch ***
@@ -139,38 +144,31 @@ interface Vlan1
  shutdown
 !
 interface Vlan18
- ip address 172.22.13.1 255.255.255.192 secondary
- ip address 203.12.59.33 255.255.255.240
- ip helper-address 172.22.12.113
+ ip address 203.12.59.33 255.255.255.240 secondary
+ ip address 172.22.13.1 255.255.255.192
+ ip helper-address 172.22.13.113
  ipv6 address 2002:A125:BC91:112::1/64
 !
 interface Vlan20
- ip address 172.22.13.97 255.255.255.240 secondary
- ip address 203.12.59.81 255.255.255.240
- ip helper-address 172.22.12.113
+ ip address 203.12.59.81 255.255.255.240 secondary
+ ip address 172.22.13.97 255.255.255.240
+ ip helper-address 172.22.13.113
  ipv6 address 2002:A125:BC91:114::1/64
 !
 interface Vlan22
- ip address 172.22.12.1 255.255.255.0 secondary
- ip address 203.12.59.49 255.255.255.248
- ip helper-address 172.22.12.113
+ ip address 203.12.59.49 255.255.255.248 secondary
+ ip address 172.22.12.1 255.255.255.0
+ ip helper-address 172.22.13.113
  ipv6 address 2002:A125:BC91:116::1/64
 !
 ip forward-protocol nd
 ip route 0.0.0.0 0.0.0.0 172.22.13.113
-ip route 172.22.13.64 255.255.255.224 172.22.13.113
-ip route 172.22.13.192 255.255.255.192 172.22.13.113
-ip route 202.12.59.0 255.255.255.224 172.22.12.113
-ip route 203.12.59.0 255.255.255.224 172.22.13.113
-ip route 203.12.59.60 255.255.255.252 172.22.13.113
-ip route 203.12.59.96 255.255.255.224 172.22.13.113
 !
 !
 no ip http server
 no ip http secure-server
 !
 no cdp log mismatch duplex
-ipv6 route 2002:A125:BC91::/56 2002:A125:BC91::1
 ipv6 route ::/0 2002:A125:BC91::1
 !
 !

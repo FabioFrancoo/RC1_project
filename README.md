@@ -1,12 +1,14 @@
 # RC_project
-Projeto de RC-I
+Redes de Comunicação I - Project
 
-### O que não está a funcionar
+### [Phase 1](https://github.com/FabioFrancoo/RC1_project/tree/main/phase_1):
 
-DHCP para:
-- February
-- May
-- Libra
-- Saggitarius
+Distribute the addresses (Public and private IPv4 and IPv6) according to the specifications provided.
 
-IPv6 entre o R1 e R2 ([DUP])
+### [Phase 2](https://github.com/FabioFrancoo/RC1_project/tree/main/phase_2):
+
+Configure the network in GNS3.
+
+### [Phase 3](https://github.com/FabioFrancoo/RC1_project/tree/main/phase_3):
+
+Add services and applications.
