@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #fff3e0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header styles */
+header {
+    background: #ff6f00;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navigation styles */
+nav.top-bar {
+    background: #ff8f00;
+    color: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #e65100;
+}
+
+nav.top-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+nav.top-bar ul li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+nav.top-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav.top-bar ul li a:hover {
+    background-color: #ffb74d;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem 0;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #ff6f00;
+}
+
+/* IP Box styles */
+.ip-box {
+    background: #fff3e0;
+    border: 1px solid #ffcc80;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ip-box h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: #ff6f00;
+}
+
+/* Contact section styles */
+.contact-box {
+    background: #fff3e0;
+    border: 1px solid #ffcc80;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box p {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+}
+
+.contact-box a {
+    color: #ff6f00;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background: #ff6f00;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
